@@ -1,0 +1,25 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+
+.top {
+    top: 65px;
+    left: 400px;
+}
+.table {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+.tap {
+    margin-top: 0 !important;
+}
+.row-hover:hover {
+    box-shadow: 0 .5rem 1rem rgba($black, .15);
+    border-radius: 20%;
+}
