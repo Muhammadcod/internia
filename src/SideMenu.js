@@ -6,13 +6,13 @@ import React from 'react';
 class SideMenu extends React.Component {
     render() {
         return (
-            <div className= "ml-5 mt-4 border"  style={{width: '250px'}}>
+            <div className= "ml-5 mt-4"  style={{width: '250px'}}>
                 <h3 className= "text-left pl-3 mb-4">employee</h3>
                 <div  className= "shadow rounded-lg bg-white text-left" style={{width: '300px'}}>
                     <div className= "mx-auto" style={{width: '250px'}}>
-                        <div className= "py-3 border pl-3"> 
-                        <span className="border rounded-circle  mr-3 d-inline-flex justify-content-center align-items-center text-white" style={{width: '35px', height: '35px', backgroundColor: '#f98693'}}><span className="border rounded-circle  bg-white" style={{width: '15px', height: '15px'}}></span></span>
-                            <p className="border d-inline">All Employees</p>
+                        <div className= "mb-4 pl-3 pt-4"> 
+                        <span className="rounded-circle  mr-3 d-inline-flex justify-content-center align-items-center text-white" style={{width: '35px', height: '35px', backgroundColor: '#f98693'}}><span className="border rounded-circle  bg-white" style={{width: '15px', height: '15px'}}></span></span>
+                            <p className="d-inline">All Employees</p>
                         </div>
                         <h6 className= "">PROJECT </h6>
                         <ul class="nav flex-column border-bottom-0 mb-1 nav-tabs">
@@ -42,7 +42,7 @@ class SideMenu extends React.Component {
                             </li>
                         </ul>
                         <div className="mx-auto justify-content-center d-flex">
-                        <button type="button" className="btn btn-primary btn-lg rounded-pill position-relative btn-down px-4 py-2">add project</button>
+                        <button type="button" className="btn btn-primary btn-lg rounded-pill position-relative btn-down px-5 py-2">add project</button>
                         </div>
                         
                     </div>

@@ -6,59 +6,29 @@ import EmployeeList from './EmployeeList';
 import Navigation from './Navigation';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faEnvelope, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faEnvelope, faTrashAlt, faPencilAlt, faBell, faLongArrowAltUp, faLongArrowAltDown } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faCheckSquare, faEnvelope, faTrashAlt)
+library.add(fab, faCheckSquare, faEnvelope, faTrashAlt, faPencilAlt, faBell, faLongArrowAltUp, faLongArrowAltDown) 
 
 class App extends Component {
 
   state = {
-    characters: [
-      {
-        
-        employee: 'Charlie',
-        salary: 'Janitor' ,
-        status: 'Janitor',
-        manage: '  ',
-      },
-      {
-        input: '',
-        employee: 'Charlie',
-        salary: 'Janitor',
-        status: 'Janitor',
-        manage: '  ',
-      },
-      {
-        input: '',
-        employee: 'Charlie',
-        salary: 'Janitor',
-        status: 'Janitor',
-        manage: ' | ',
-      },
-      {
-        input: ' ',
-        employee: 'Charlie',
-        salary: 'Janitor',
-        status: 'Janitor',
-        manage: '  ',
-      },
-      {
-        input: ' ',
-        employee: 'Charlie',
-        salary: 'Janitor',
-        status: 'Janitor',
-        manage: ' | ',
-      },
-      {
-      
-        employee: 'Charlie',
-        salary: 'Janitor',
-        status: 'Janitor',
-        manage: ' | ',
-      },
-    ],
+    characters: [],
 
     
+  }
+
+  componentDidMount() {
+    const url =
+      'https://api.github.com/users?since=135>; rel="next"'
+
+    fetch(url)
+      .then(rows => rows.json())
+      .then(rows => {
+        this.setState({
+          characters: rows,
+        })
+      })
   }
 
   removeCharacter = index => {

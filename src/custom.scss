@@ -14,7 +14,7 @@
 }
 .table {
     border-collapse: separate;
-    border-spacing: 0 20px;
+    border-spacing: 0 10px;
 }
 .tap {
     margin-top: 0 !important;
@@ -22,4 +22,16 @@
 .row-hover:hover {
     box-shadow: 0 .5rem 1rem rgba($black, .15);
     border-radius: 20%;
+}
+.btn-down {
+    top: 25px;
+}
+
+.fa-envelope {
+    color: black;
+  }
+
+.cap {
+    top: -13px;
+    left: 25px;
 }
