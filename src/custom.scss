@@ -5,10 +5,16 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Questrial|Quicksand|Teko&display=swap');
+
+
+
+
+
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Quicksand', sans-serif;;
   }
 .top {
     top: 65px;

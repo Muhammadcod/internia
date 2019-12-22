@@ -26,7 +26,7 @@ const TableBody = props => {
                     <img src="{row.avatar_url}" alt= "" className="rounded-circle mr-2"  style={{width: '40px', height: '40px'}} />
                     <div className="d-inline-block align-middle py-0">
                         <h6 className="m-0 font-weight-bold">{row.login}</h6>
-                        <p className="m-0 font-weight-light pt-0">fccwddwdwdwd</p>
+                        <p className="m-0 font-weight-light pt-0">{row.login}</p>
                     </div>
                 </div>
                 
@@ -35,8 +35,8 @@ const TableBody = props => {
             <td className="py-1">
                 <span>
                     <div className="d-inline-block align-middle py-0">
-                        <h6 className="m-0 font-weight-bold">tfydwdwdwdwd<span className="badge badge-pill badge-success ml-2">Succ</span></h6>
-                        <p className="m-0 font-weight-light pt-0">fccwddwdwdwd</p>
+                        <h6 className="m-0 font-weight-bold">{row.login}<span className="badge badge-pill badge-success ml-2">Succ</span></h6>
+                        <p className="m-0 font-weight-light pt-0">{row.login}</p>
                         
                     </div>
                 </span>
@@ -45,8 +45,8 @@ const TableBody = props => {
             <td className="py-1">
                 <div>
                     <div className="d-inline-block align-middle py-0">
-                        <h6 className="m-0 font-weight-bold">tfydwdwdwdwd</h6>
-                        <p className="m-0 font-weight-light pt-0">fccwddwdwdwd</p>
+                        <h6 className="m-0 font-weight-bold">{row.login}</h6>
+                        <p className="m-0 font-weight-light pt-0">{row.login}</p>
                     </div>
                 </div>
             </td>

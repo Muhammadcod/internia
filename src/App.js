@@ -4,7 +4,6 @@ import './custom.scss';
 import SideMenu from './SideMenu';
 import EmployeeList from './EmployeeList';
 import Navigation from './Navigation';
-import './fonts/Roboto-Regular.ttf'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faEnvelope, faTrashAlt, faPencilAlt, faBell, faLongArrowAltUp, faLongArrowAltDown} from '@fortawesome/free-solid-svg-icons'
