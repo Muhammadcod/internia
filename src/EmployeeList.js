@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -8,9 +7,9 @@ const TableHeader = () => {
         <thead className=" border">
             <tr className="bg-light">
                 <th className="align-middle"  scope="col"><input className="form-check-input mx-auto" type="checkbox" value="" id="defaultCheck1" /></th>
-                <th className=" " style={{paddingLeft: '60px'}} scope="col">EMPLOYEE<FontAwesomeIcon icon= "longArrowAltUp" style={{color: "#000"}} /></th>
-                <th scope="col">SALARY<FontAwesomeIcon icon= "longArrowAltUp" style={{color: "#000"}} /></th>
-                <th scope="col">STATUS<FontAwesomeIcon icon= "longArrowAltDown" style={{color: "#000"}} /></th>
+                <th className=" " style={{paddingLeft: '60px'}} scope="col">EMPLOYEE<FontAwesomeIcon icon= "long-arrow-alt-up" className="ml-2"  style={{color: "grey"}} /></th>
+                <th scope="col">SALARY<FontAwesomeIcon icon= "long-arrow-alt-up" className="ml-2" style={{color: "grey"}} /></th>
+                <th scope="col">STATUS<FontAwesomeIcon icon= "long-arrow-alt-down" className="ml-2"  style={{color: "#000"}} /></th>
                 <th scope="col">MANAGE</th>
             </tr>
         </thead>
@@ -20,11 +19,11 @@ const TableHeader = () => {
 const TableBody = props => {
     const rows = props.characterData.map((row, index) => {
     return (
-        <tr key={index} className="bg-white mt-0 row-hover">
+        <tr key={index} className=" mt-0 row-hover">
             <td className=""><input className="form-check-input mx-auto" type="checkbox" value="" id="defaultCheck1" /></td>
             <td className="py-1">
                 <div>
-                    <img src="{row.avatar_url}" alt= "yg" className="rounded-circle mr-2"  style={{width: '40px', height: '40px'}} />
+                    <img src="{row.avatar_url}" alt= "" className="rounded-circle mr-2"  style={{width: '40px', height: '40px'}} />
                     <div className="d-inline-block align-middle py-0">
                         <h6 className="m-0 font-weight-bold">{row.login}</h6>
                         <p className="m-0 font-weight-light pt-0">fccwddwdwdwd</p>
@@ -71,7 +70,7 @@ class EmployeeList extends React.Component {
         const { characterData, removeCharacter } = this.props
 
         return (
-            <div className= "position-absolute border mt-4 top bg-light" style={{width: '910px'}} >
+            <div className= "position-absolute mt-4 top bg-light" style={{width: '910px', height: '500px'}} >
                 <button  type="button" class="btn btn-success btn-lg py-1 align-middle px-3  rounded-pill float-right">add employee</button>
                 <table className="table table-borderless">
                     <TableHeader className="" />

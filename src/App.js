@@ -4,9 +4,10 @@ import './custom.scss';
 import SideMenu from './SideMenu';
 import EmployeeList from './EmployeeList';
 import Navigation from './Navigation';
+import './fonts/Roboto-Regular.ttf'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faEnvelope, faTrashAlt, faPencilAlt, faBell, faLongArrowAltUp, faLongArrowAltDown } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faEnvelope, faTrashAlt, faPencilAlt, faBell, faLongArrowAltUp, faLongArrowAltDown} from '@fortawesome/free-solid-svg-icons'
 
 library.add(fab, faCheckSquare, faEnvelope, faTrashAlt, faPencilAlt, faBell, faLongArrowAltUp, faLongArrowAltDown) 
 
@@ -20,7 +21,7 @@ class App extends Component {
 
   componentDidMount() {
     const url =
-      'https://api.github.com/users?since=135>; rel="next"'
+      'https://api.github.com/users?per_page=7'
 
     fetch(url)
       .then(rows => rows.json())

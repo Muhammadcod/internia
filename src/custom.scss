@@ -7,7 +7,9 @@
 @import "../node_modules/bootstrap/scss/mixins";
 
 
-
+body {
+    font-family: 'Roboto', sans-serif;
+  }
 .top {
     top: 65px;
     left: 400px;
@@ -15,6 +17,17 @@
 .table {
     border-collapse: separate;
     border-spacing: 0 10px;
+
+    td { 
+        border: solid 1px white;
+        background: white;
+    }
+    td:first-child { border-top-left-radius: 10px; }
+    td:last-child { border-top-right-radius: 10px; }
+    td:first-child { border-bottom-left-radius: 10px; }
+    td:last-child { border-bottom-right-radius: 10px; }
+    
+    
 }
 .tap {
     margin-top: 0 !important;

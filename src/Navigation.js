@@ -22,7 +22,7 @@ class Navigation extends React.Component {
                     </ul> 
                
                 
-                <div className="user-area border text-center">
+                <div className="user-area text-center">
                     <a href="#" class="notification  mx-3 ">
                         <FontAwesomeIcon icon="bell" style={{color: "#000"}} />
                     </a>
